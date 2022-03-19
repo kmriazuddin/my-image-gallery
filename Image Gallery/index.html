@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="./R1.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="container text-center">
+		<h1>Pexels Image Gallery</h1>
+		<p>Beautiful Image</p>
+		<p>Create By K M Riaz Uddin</p>
+		<p>Date : 10-03-2022</p>
+	</div>
+    <div class="container">
+        <div class="image-container">
+            <div class="image"><img src="./img-2.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-3.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-4.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-5.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-6.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-7.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-8.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-9.JPG" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-10.JPG" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-11.JPG" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-12.JPG" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-13.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-14.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-15.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-16.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-17.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-18.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-19.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-20.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-21.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-22.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-23.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-24.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-25.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-26.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-27.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-28.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-29.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-30.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-31.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-32.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-33.jpg" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-34.JPG" loading="lazy" alt=""></div>
+            <div class="image"><img src="./img-35.jpg" loading="lazy" alt=""></div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="./image/img-2.jpg" loading="lazy" alt="">
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+    <!-- Counter -->
+    <div style="float: right;">
+        <h1 style="text-align: center; margin-bottom: 0px; font-size: 20px;">Visit</h1>
+    <a href="https://www.freecounterstat.com" title="website hit counter"><img src="https://counter4.stat.ovh/private/freecounterstat.php?c=cs2zl4g3f7te7js8zg3a1s9dh27wq8ca" border="0" title="website hit counter" alt="website hit counter"></a>
+    </div>
+</body>
+</html>
